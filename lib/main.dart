@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _dismissFlutterVC() async {
     try {
-      await methodChannel2.invokeListMethod('dismissFLT');
+      await methodChannel2.invokeMethod('dismissFLT');
     } on PlatformException {}
   }
 
